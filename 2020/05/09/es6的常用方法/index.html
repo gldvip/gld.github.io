@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="ES6," />
 
 
 
@@ -79,12 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="类和继承（class和extends） clss声明类  123456789101112131415161718class Person &amp;#123;  &#x2F;&#x2F; 构造器  constructor (name, age) &amp;#123;    this.name &#x3D; name    this.age &#x3D; age  &amp;#125;  showName () &amp;#123;    return this.nam">
+<meta property="og:type" content="article">
+<meta property="og:title" content="es6的常用方法">
+<meta property="og:url" content="http://yoursite.com/2020/05/09/es6%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="类和继承（class和extends） clss声明类  123456789101112131415161718class Person &amp;#123;  &#x2F;&#x2F; 构造器  constructor (name, age) &amp;#123;    this.name &#x3D; name    this.age &#x3D; age  &amp;#125;  showName () &amp;#123;    return this.nam">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-05-09T06:47:51.000Z">
+<meta property="article:modified_time" content="2020-05-11T07:31:42.309Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="ES6">
 <meta name="twitter:card" content="summary">
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/05/09/es6的常用方法/"/>
 
 
 
 
 
-  <title>Hexo</title>
+  <title>es6的常用方法 | Hexo</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,9 +248,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -276,9 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/05/09/es6%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/" itemprop="url">es6的常用方法</a></h1>
+          <h1 class="post-title" itemprop="name headline">es6的常用方法</h1>
         
 
         <div class="post-meta">
@@ -350,9 +352,7 @@
       
 
       
-        
-          
-            <h3 id="类和继承（class和extends）"><a href="#类和继承（class和extends）" class="headerlink" title="类和继承（class和extends）"></a>类和继承（class和extends）</h3><ul>
+        <h3 id="类和继承（class和extends）"><a href="#类和继承（class和extends）" class="headerlink" title="类和继承（class和extends）"></a>类和继承（class和extends）</h3><ul>
 <li><h4 id="clss声明类"><a href="#clss声明类" class="headerlink" title="clss声明类"></a>clss声明类</h4></li>
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">  <span class="comment">// 构造器</span></span><br><span class="line">  <span class="keyword">constructor</span> (name, age) &#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name</span><br><span class="line">    <span class="keyword">this</span>.age = age</span><br><span class="line">  &#125;</span><br><span class="line">  showName () &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.name</span><br><span class="line">  &#125;</span><br><span class="line">  showAge () &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.age</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> p1 = <span class="keyword">new</span> Person(<span class="string">'A'</span>, <span class="number">18</span>)</span><br><span class="line"><span class="keyword">var</span> p2 = <span class="keyword">new</span> Person(<span class="string">'B'</span>, <span class="number">20</span>)</span><br><span class="line"><span class="built_in">console</span>.log(p1.name) <span class="comment">// A</span></span><br><span class="line"><span class="built_in">console</span>.log(p1.showName()) <span class="comment">// A</span></span><br><span class="line"><span class="built_in">console</span>.log(p2.showAge()) <span class="comment">// 20</span></span><br></pre></td></tr></table></figure>
@@ -414,8 +414,6 @@
 </li>
 </ul>
 
-          
-        
       
     </div>
     
@@ -430,313 +428,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/26/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/05/26/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" itemprop="url">Hexo 添加分类及标签</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-26T12:12:57+08:00">
-                2017-05-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Git/" itemprop="url" rel="index">
-                    <span itemprop="name">Git</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/ES6/" rel="tag"># ES6</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Git常用命令"><a href="#Git常用命令" class="headerlink" title="Git常用命令"></a>Git常用命令</h2><ul>
-<li><p>生成ssh <code>ssh-keygen -o</code></p>
-</li>
-<li><p>关联远程仓库</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git remote add origin 仓库地址</span><br></pre></td></tr></table></figure>
-
-
-</li>
-</ul>
-<h2 id="gitLab安装"><a href="#gitLab安装" class="headerlink" title="gitLab安装"></a>gitLab安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sudo docker run --detach \</span><br><span class="line"> 	--hostname http:&#x2F;&#x2F;152.136.136.161 \</span><br><span class="line"> 	--publish 13800:80 --publish 13822:22 \</span><br><span class="line"> 	--name github_test \</span><br><span class="line"> 	--restart always \</span><br><span class="line"> 	gitlab&#x2F;gitlab-ce:latest</span><br></pre></td></tr></table></figure>
-
-
-
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/26/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95Centos/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/05/26/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95Centos/" itemprop="url">Hexo 添加分类及标签</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-26T12:12:57+08:00">
-                2017-05-26
-              </time>
+              <a href="/2017/05/26/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="next" title="Hexo 添加分类及标签">
+                <i class="fa fa-chevron-left"></i> Hexo 添加分类及标签
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Git/" itemprop="url" rel="index">
-                    <span itemprop="name">Git</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h3 id="windos"><a href="#windos" class="headerlink" title="windos"></a>windos</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">cd ~.&#x2F;ssh</span><br><span class="line">cat id_rsa_pub</span><br><span class="line">复制内容</span><br><span class="line"></span><br><span class="line">切换到centos</span><br><span class="line">cd ~&#x2F;.ssh</span><br><span class="line">echo authorized_keys 刚刚复制的内容</span><br><span class="line">切换到windos</span><br><span class="line">在ssh目录新新建config文件，输入</span><br><span class="line">Host luck</span><br><span class="line">Port 10022</span><br><span class="line">HostName 152.136.136.161</span><br><span class="line">User root</span><br><span class="line">IdentityFile ~&#x2F;.ssh&#x2F;id_rsa</span><br><span class="line">IdentitiesOnly yes</span><br></pre></td></tr></table></figure>
-
-
-
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -746,10 +467,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -757,6 +479,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -777,8 +503,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -838,6 +573,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#类和继承（class和extends）"><span class="nav-number">1.</span> <span class="nav-text">类和继承（class和extends）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#clss声明类"><span class="nav-number">1.1.</span> <span class="nav-text">clss声明类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置默认值"><span class="nav-number">1.2.</span> <span class="nav-text">设置默认值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实现类继承"><span class="nav-number">1.3.</span> <span class="nav-text">实现类继承</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#set数据结构"><span class="nav-number">2.</span> <span class="nav-text">set数据结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#set的属性和方法"><span class="nav-number">2.1.</span> <span class="nav-text">set的属性和方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#set的操作方法"><span class="nav-number">2.2.</span> <span class="nav-text">set的操作方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#set的遍历方法"><span class="nav-number">2.3.</span> <span class="nav-text">set的遍历方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实际应用"><span class="nav-number">2.4.</span> <span class="nav-text">实际应用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#实现数组去重"><span class="nav-number">2.4.1.</span> <span class="nav-text">...实现数组去重</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用Set实现并集、交集和差集"><span class="nav-number">2.4.2.</span> <span class="nav-text">使用Set实现并集、交集和差集</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -978,6 +729,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
